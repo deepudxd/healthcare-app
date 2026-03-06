@@ -1,0 +1,392 @@
+/* Additional Mobile-Specific Enhancements */
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+
+    /* Auth Pages */
+    .auth-page {
+        padding: var(--spacing-md) var(--spacing-sm);
+        min-height: auto;
+    }
+
+    .auth-container {
+        max-width: 100%;
+    }
+
+    .auth-card {
+        padding: var(--spacing-md);
+    }
+
+    .auth-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .auth-header p,
+    .auth-footer p {
+        font-size: var(--font-size-base);
+    }
+
+    /* Dashboard Enhancements */
+    .dashboard-header .page-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .dashboard-header .page-description {
+        font-size: var(--font-size-base);
+    }
+
+    .dashboard-tips li {
+        font-size: var(--font-size-base);
+    }
+
+    /* Navbar Mobile Improvements */
+    .navbar-container {
+        padding: var(--spacing-sm);
+    }
+
+    .navbar-brand {
+        font-size: var(--font-size-large);
+    }
+
+    .navbar-logo {
+        font-size: 24px;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-link {
+        width: 100%;
+        text-align: left;
+        padding: var(--spacing-sm);
+    }
+
+    .navbar-user {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-sm);
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        padding-top: var(--spacing-sm);
+        border-top: 2px solid var(--border-light);
+    }
+
+    .navbar-username {
+        padding: var(--spacing-xs) 0;
+    }
+
+    .navbar-logout {
+        width: 100%;
+    }
+
+    /* Home Page Mobile */
+    .hero-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+        min-height: 350px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-description {
+        font-size: var(--font-size-base);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .btn-large {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-large);
+    }
+
+    .features-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .section-title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .feature-card {
+        padding: var(--spacing-lg);
+    }
+
+    .feature-icon {
+        font-size: 48px;
+    }
+
+    .cta-section {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .cta-content h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .cta-content p {
+        font-size: var(--font-size-large);
+    }
+
+    /* Reports Mobile */
+    .report-upload-container {
+        padding: 0;
+    }
+
+    .file-info {
+        font-size: var(--font-size-base);
+        word-break: break-word;
+    }
+
+    .report-card {
+        padding: var(--spacing-md);
+    }
+
+    .report-icon {
+        font-size: 40px;
+    }
+
+    .report-title {
+        font-size: var(--font-size-large);
+    }
+
+    .report-details p {
+        font-size: var(--font-size-base);
+    }
+
+    .report-actions {
+        flex-direction: column;
+    }
+
+    .report-actions .btn {
+        width: 100%;
+    }
+
+    /* Blood Donor Mobile */
+    .donor-tabs {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .donor-tab {
+        padding: var(--spacing-md);
+        font-size: var(--font-size-base);
+    }
+
+    .donor-search-form {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .donor-search-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .donor-search-actions .btn {
+        width: 100%;
+    }
+
+    .donor-card {
+        padding: var(--spacing-md);
+    }
+
+    .donor-blood-badge {
+        font-size: var(--font-size-large);
+        padding: 6px var(--spacing-sm);
+    }
+
+    .donor-name {
+        font-size: var(--font-size-large);
+        padding-right: 60px;
+    }
+
+    .donor-info p {
+        font-size: var(--font-size-base);
+    }
+
+    /* BMI Calculator Mobile */
+    .bmi-container {
+        padding: 0;
+    }
+
+    .bmi-form {
+        margin-top: var(--spacing-sm);
+    }
+
+    .bmi-actions {
+        flex-direction: column;
+    }
+
+    .bmi-result-card {
+        padding: var(--spacing-lg);
+    }
+
+    .bmi-result-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .bmi-value {
+        font-size: 56px;
+    }
+
+    .bmi-category {
+        font-size: var(--font-size-xl);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .bmi-input-summary p {
+        font-size: var(--font-size-base);
+    }
+
+    .bmi-health-message {
+        font-size: var(--font-size-base);
+    }
+
+    .bmi-chart-item {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        text-align: center;
+        padding: var(--spacing-sm);
+    }
+
+    .bmi-chart-range {
+        font-size: var(--font-size-base);
+    }
+
+    .bmi-chart-label {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+
+    /* Auth Pages */
+    .auth-page {
+        padding: var(--spacing-sm);
+    }
+
+    .auth-card {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    /* Home Page */
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-section {
+        min-height: 300px;
+    }
+
+    .feature-icon {
+        font-size: 40px;
+    }
+
+    /* Dashboard */
+    .dashboard-card {
+        padding: var(--spacing-md);
+    }
+
+    .dashboard-card-icon {
+        font-size: 40px;
+    }
+
+    /* Reports */
+    .report-card {
+        padding: var(--spacing-sm);
+    }
+
+    .report-icon {
+        font-size: 32px;
+    }
+
+    /* Blood Donors */
+    .donor-blood-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .donor-name {
+        padding-right: 0;
+    }
+
+    /* BMI Calculator */
+    .bmi-value {
+        font-size: 48px;
+    }
+
+    .bmi-category {
+        font-size: var(--font-size-large);
+    }
+
+    .bmi-result-card {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Tablet Specific (between mobile and desktop) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar-menu {
+        flex-wrap: wrap;
+        gap: var(--spacing-sm);
+    }
+
+    .navbar-user {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        padding-top: var(--spacing-sm);
+        border-top: 2px solid var(--border-light);
+    }
+
+    .hero-section {
+        padding: var(--spacing-xl) var(--spacing-md);
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .hero-description {
+        font-size: var(--font-size-large);
+    }
+}
+
+/* Ensure all interactive elements are touch-friendly */
+@media (max-width: 768px) {
+
+    a,
+    button,
+    input[type="button"],
+    input[type="submit"],
+    select {
+        min-height: 44px;
+        /* iOS recommended touch target */
+    }
+
+    /* Improve tap target spacing */
+    .navbar-link,
+    .donor-tab,
+    .dashboard-card {
+        min-height: 56px;
+    }
+}

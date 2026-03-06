@@ -1,0 +1,26 @@
+{
+    "rules": {
+        "users": {
+            "$userId": {
+                ".read": "$userId === auth.uid",
+                ".write": "$userId === auth.uid"
+            }
+        },
+        "reports": {
+            "$userId": {
+                ".read": "$userId === auth.uid",
+                ".write": "$userId === auth.uid",
+                "$reportId": {
+                    ".validate": "newData.hasChildren(['reportName', 'testDate', 'labName', 'fileName', 'fileType', 'fileUrl', 'filePath', 'uploadDate'])"
+                }
+            }
+        },
+        "donors": {
+            ".read": "auth != null",
+            "$donorId": {
+                ".write": "auth != null",
+                ".validate": "newData.hasChildren(['userId', 'name', 'bloodGroup', 'location', 'contact', 'registeredDate'])"
+            }
+        }
+    }
+}

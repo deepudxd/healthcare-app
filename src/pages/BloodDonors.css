@@ -1,0 +1,104 @@
+.donor-tabs {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.donor-tab {
+    flex: 1;
+    padding: var(--spacing-md);
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-semibold);
+    background-color: var(--bg-primary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.donor-tab:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+}
+
+.donor-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.donor-search-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: var(--spacing-md);
+    align-items: end;
+    margin-top: var(--spacing-md);
+}
+
+.donor-search-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.donor-card {
+    position: relative;
+}
+
+.donor-blood-badge {
+    position: absolute;
+    top: var(--spacing-md);
+    right: var(--spacing-md);
+    background-color: var(--danger-color);
+    color: white;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+}
+
+.donor-name {
+    color: var(--text-primary);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-md);
+    padding-right: 80px;
+    /* Space for badge */
+}
+
+.donor-info p {
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-base);
+    color: var(--text-secondary);
+}
+
+.donor-info strong {
+    color: var(--text-primary);
+}
+
+.donor-date {
+    font-size: var(--font-size-base);
+    color: var(--text-light);
+    margin-top: var(--spacing-sm);
+}
+
+.donor-register-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .donor-tabs {
+        flex-direction: column;
+    }
+
+    .donor-search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .donor-search-actions {
+        flex-direction: column;
+    }
+
+    .donor-search-actions .btn {
+        width: 100%;
+    }
+}
