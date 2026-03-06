@@ -10,13 +10,13 @@ import { getStorage } from 'firebase/storage';
 // TODO: Replace with your Firebase project configuration
 // You can find these values in Firebase Console > Project Settings
 const firebaseConfig = {
-    apiKey: "AIzaSyC-tsGpEyS2HYI7wgWqI20xCLJay2ZKcAQ",
+    apiKey: "",
     authDomain: "health-care-hub-83ad2.firebaseapp.com",
     databaseURL: "https://health-care-hub-83ad2-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "health-care-hub-83ad2",
     storageBucket: "health-care-hub-83ad2.firebasestorage.app",
     messagingSenderId: "262932739344",
-    appId: "1:262932739344:web:e3a48a659b678920576195"
+    appId: ""
 };
 
 // Initialize Firebase
